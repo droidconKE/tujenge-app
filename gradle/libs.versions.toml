@@ -2,6 +2,7 @@
 # Gradle Plugins
 agp = "8.1.2"
 kotlin = "1.9.0"
+hilt = "2.44"
 
 # Androidx libraries
 androidx-appcompat = "1.6.1"
@@ -11,9 +12,17 @@ androidx-test-junit = "1.1.5"
 
 # Android libraries
 android-material = "1.9.0"
+androidx-material3 = "1.1.2"
+
 
 # Other libraries
 junit4 = "4.13.2"
+
+# Dagger Hilt
+dagger-hilt-android = "2.48"
+dagger-hilt-android-compiler = "2.45"
+hilt-compiler = "1.1.0"
+hilt-navigation-compose = "1.1.0"
 
 [libraries]
 # AndroidX libraries
@@ -22,12 +31,23 @@ androidx-coreKtx = { module = "androidx.core:core-ktx", version.ref = "androidx-
 androidx-test-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-test-junit"}
 androidx-test-espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-test-espresso" }
 
+
 # Android libraries
 android-material = { module = "com.google.android.material:material", version.ref = "android-material"}
+material3 = { module = "androidx.compose.material3:material3", version.ref = "androidx-material3" }
+
 
 # Other libraries
 junit4 = { module = "junit:junit", version.ref = "junit4" }
 
+# Dagger Hilt
+google-daggerHiltAndroid = { module = "com.google.dagger:hilt-android", version.ref = "dagger-hilt-android" }
+google-daggerHiltAndroidCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger-hilt-android-compiler" }
+androidx-hiltCompiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-compiler" }
+androidx-hiltNavigationCompose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+
+
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
