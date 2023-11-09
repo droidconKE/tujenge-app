@@ -53,7 +53,7 @@ android {
 dependencies {
     implementation(libs.androidx.coreKtx)
     implementation(libs.androidx.appcompat)
-//    implementation(libs.android.material)
+    //implementation(libs.android.material)
     //material 3
     implementation(libs.material3)
 
@@ -72,6 +72,14 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.45")
     kapt("androidx.hilt:hilt-compiler:1.1.0")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
+    //Retrofit
+    //retrofit and kotlinx dependencies
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
 
 
 
