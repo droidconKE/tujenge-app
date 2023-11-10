@@ -56,6 +56,8 @@ dependencies {
     //implementation(libs.android.material)
     //material 3
     implementation(libs.material3)
+    //material-icons
+    implementation ("androidx.compose.material:material-icons-extended:1.5.4")
 
 
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
